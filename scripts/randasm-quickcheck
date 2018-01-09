@@ -1,5 +1,17 @@
 #!/bin/bash
-# Builds a 
+# Builds a bunch of random assembly files using the randasm tool and assembles 
+# them using the target assembler (supplied by you).
+# All we do here is get some confidence that the random output is valid.
+#
+# USAGE EXAMPLE:
+#   This will build and assemble 4 random files for the MCS51/ASEM51 target, 
+#   with 200 instructions each:
+#   
+#       randasm-quickcheck mcs51-asem51 ~/dev/tools/asem51/asem 200 4
+#
+#   Of course you need to supply the path of your own copy of the assembler.
+#   All you get is a bunch of object files OR error messages. 
+#
 
 if [ $# -ne 4 ]; 
 then 
