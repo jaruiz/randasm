@@ -5,8 +5,8 @@ setup(name=                 'randasm',
       description=          'Builds random, retargettable snippets of assembler source',
       url=                  'http://github.com/jaruiz/randasm',
       author=               'Jose A. Ruiz',
-      author_email=         'ja_rd@outlook.com',
-      license=              'MIT',
+      author_email=         'jose.a.ruiz.dominguez.eu@gmail.com',
+      license=              'GPLv3.0',
       packages=             ['randasm'],
       package_dir=          {'randasm': 'randasm'},
       package_data=         {'randasm': ['targets/*.yaml']},
@@ -17,5 +17,5 @@ setup(name=                 'randasm',
                             },
       scripts=              ['scripts/randasm-quickcheck'],
       install_requires=     ['pyyaml'],
-      zip_safe=             False
+      zip_safe=             True
       )
